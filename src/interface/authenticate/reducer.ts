@@ -5,7 +5,12 @@ export interface IActionLogin {
     payload: IUserProps
     token: string
 }
+
+export interface IActionVerify {
+    type: 'AUTHENTICATE',
+    payload: IUserProps
+}
 export interface IActionLogout {
     type: 'LOGOUT'
 }
-export type TActionProps = IActionLogin | IActionLogout
+export type TActionProps = IActionLogin | IActionLogout | IActionVerify

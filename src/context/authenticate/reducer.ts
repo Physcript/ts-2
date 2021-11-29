@@ -11,6 +11,13 @@ const reducer = (state: IAuthState ,action: TActionProps): IAuthState => {
                 AUTH: true,
                 TOKEN: action.token
             }
+        case 'AUTHENTICATE': {
+            return {
+                ...state,
+                USER: action.payload,
+                AUTH: true
+            }
+        }
         case 'LOGOUT':
             return {
                 ...state,

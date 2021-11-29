@@ -35,7 +35,7 @@ const StartPage:React.FunctionComponent<ILoginProps> = (props) => {
         })
         .then((res) => {
             setLoginError('')
-            document.cookie = `token=${res.data.data.token}`
+            document.cookie = `token=${res.data.data.token} `
             authContext.authDispatch({ type: 'LOGIN', payload: res.data.data.user, token: res.data.data.token })
             Navi('/home')
         })

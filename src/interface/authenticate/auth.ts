@@ -10,6 +10,7 @@ export interface IUserProps {
 export interface IAuthState {
     USER: IUserProps | null
     AUTH: boolean
+    TOKEN: string | null
 }
 
 

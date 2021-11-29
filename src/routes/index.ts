@@ -1,6 +1,7 @@
 
 import Login from '../components/Login';
 import { IRoutes } from '../interface/routes';
+import HomePage from '../pages/HomePage';
 import RegisterPage from '../pages/RegisterPage';
 import StartPage from '../pages/StartPage';
 
@@ -19,6 +20,10 @@ const mainRoute: IRoutes[] = [
     {
         path: '/',
         element: StartPage
+    },
+    {
+        path: '/home',
+        element: HomePage
     }
 ]
 

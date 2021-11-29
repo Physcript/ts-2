@@ -8,7 +8,8 @@ const reducer = (state: IAuthState ,action: TActionProps): IAuthState => {
             return {
                 ...state,
                 USER: action.payload,
-                AUTH: true
+                AUTH: true,
+                TOKEN: action.token
             }
         case 'LOGOUT':
             return {

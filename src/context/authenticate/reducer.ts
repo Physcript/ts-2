@@ -22,7 +22,8 @@ const reducer = (state: IAuthState ,action: TActionProps): IAuthState => {
             return {
                 ...state,
                 USER: null,
-                AUTH: false
+                AUTH: false,
+                TOKEN: null
             }
         default:
             return {

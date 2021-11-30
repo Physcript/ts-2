@@ -67,8 +67,8 @@ const StartPage:React.FunctionComponent<ILoginProps> = (props) => {
                     className = "btn-sm" style = {{ width: '50%' }}
                     onClick = { loginHandler }
                 >Login</Button>
-                <a href = "#">Forgot Password</a>
-                <a href = "#">Register new account</a>
+                <a href = "/forgot">Forgot Password</a>
+                <a href = "/register">Register new account</a>
             </div>
         </div>
     )
